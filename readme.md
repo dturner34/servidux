@@ -134,8 +134,9 @@ would likely be organized better with traditional Redux patterns.
 ## Motivation
 
 There's a common trend where applications start with a simple service pattern and move to Redux as they inevitably start sharing state.
-As the app grows, someone will typically create a library to try abstract the complexity of Redux to follow the simple service pattern,
-often in a way that requires refactoring and creates accidental complexity.
+As the app grows, someone will typically create a library to try abstract the complexity of Redux to follow the simple service pattern
+in an attempt to simplify the pattern when writing code for new features.  Often the abstractions are written in a way that requires
+refactoring and creates accidental complexity.
 
 Servidux attempts to solve this with a decorator that doesn't require refactoring existing code. We can have our cake and eat it too.
 
